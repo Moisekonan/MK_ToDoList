@@ -26,22 +26,26 @@ function displayUserTasks() {
 let ad = document.getElementById('addTask');
 ad.addEventListener('click', addUserTask) 
 // Fonction pour ajouter une nouvelle tâche à la liste de l'utilisateur actuellement connecté
-function addUserTask(text) {
+function addUserTask() {
     const taskInput = document.getElementById('taskInput');
-    // const text = taskInput.value.trim();
+    const text = taskInput.value.trim();
 
     if (text === '') return;
+
+    const username = sessionStorage.getItem('currentUser'); 
+    const userTasks = JSON.parse(localStorage.getItem(username)) || []; 
 
     const newTask = {
         text,
         completed: false
     };
 
-    storedTasks.push(newTask); 
-    localStorage.setItem('tasks', JSON.stringify(storedTasks)); 
+    userTasks.push(newTask);
+    localStorage.setItem(username, JSON.stringify(userTasks)); 
     taskInput.value = '';
-    displayUserTasks();
+    displayUserTasks(); 
 }
+
 
 // Fonction pour basculer l'état d'achèvement d'une tâche de l'utilisateur actuellement connecté
 function toggleUserTask(index) {
@@ -77,11 +81,12 @@ function deleteUserTask(index) {
 }
 
 // Fonction pour gérer la déconnexion
+let deco = document.getElementById('deco');
 function logout() {
     sessionStorage.removeItem('currentUser');
     window.location.href = './connexion.html';
 }
-
+deco.addEventListener('click', logout);
 displayUserTasks();
 
 
