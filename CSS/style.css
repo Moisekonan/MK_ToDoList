@@ -46,6 +46,10 @@
     font-weight: 100;
     line-height: 25px;
 }
+#use{
+    color: #009688;
+}
+
 button{
     width: 200px;
     padding: 15px 30px;
@@ -64,7 +68,7 @@ button a{
     text-decoration: none;
     color: #fff;
 }
-span{
+button span{
     background: #009688;
     height: 100%;
     width: 0;

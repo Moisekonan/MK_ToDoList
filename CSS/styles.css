@@ -8,12 +8,17 @@ body{
 /* Styles pour le conteneur principal */
 .container {
     max-width: 400px;
-    margin: 20px auto; /* Marge supérieure ajoutée pour espacer le formulaire */
-    padding: 20px;
+    margin: 20px auto;
+    padding: 40px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+span#use{
+    color: #009688;
+    font-size: 12rem;
 }
 
 /* Styles pour le titre */
@@ -31,6 +36,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    outline-color: #009688;
 }
 
 /* Styles pour le bouton "Ajouter" */
@@ -41,6 +47,7 @@ button {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    margin: 10px;
 }
 
 /* Styles pour la liste de tâches */
@@ -75,6 +82,8 @@ button {
 /* Styles pour les cases à cocher */
 input[type="checkbox"] {
     margin-right: 10px;
+    color: #009688;
+    background-color: #009688;
 }
 
 /* Styles pour l'affichage de l'utilisateur */
