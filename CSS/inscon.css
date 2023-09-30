@@ -15,7 +15,7 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 5px solid #009688;
     border-radius: 5px;
     padding: 30px;
     max-width: 400px;
