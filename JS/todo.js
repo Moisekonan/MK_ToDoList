@@ -1,3 +1,8 @@
+// Récupérez le nom d'utilisateur actuellement connecté depuis sessionStorage
+const currentUser = sessionStorage.getItem('currentUser');
+if (currentUser) {
+    document.getElementById('userDisplay').textContent = `Utilisateur : ${currentUser}`;
+}
 
 // Fonction pour récupérer la liste de tâches de l'utilisateur actuellement connecté
 function getUserTasks(username) {

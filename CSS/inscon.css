@@ -1,20 +1,27 @@
 /* Styles communs aux pages d'inscription et de connexion */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/login.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    margin-top: 50px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
     max-width: 400px;
-    margin: 0 auto;
+    width: 80%; /* Réduisez la largeur du conteneur */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre légère */
 }
 
 h1 {
@@ -26,6 +33,7 @@ label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
+    text-align: left; /* Alignez les labels à gauche */
 }
 
 input[type="text"],
@@ -36,11 +44,12 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    outline-color: #009688;
 }
 
-button {
-    background-color: #007bff;
+button {    
     color: #fff;
+    background-color: #009688;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -50,14 +59,16 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: #009688;
+    border: 1px dotted #009688;
 }
 
-.btn {
+.btnRetour {
     display: block;
     margin-top: 20px;
     text-decoration: none;
-    color: #007bff;
+    color: #009688;
     font-weight: bold;
 }
 

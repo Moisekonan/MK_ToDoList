@@ -1,7 +1,14 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/to.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
 /* Styles pour le conteneur principal */
 .container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto; /* Marge supérieure ajoutée pour espacer le formulaire */
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
@@ -12,7 +19,7 @@
 /* Styles pour le titre */
 h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Réduire la marge inférieure du titre */
     color: #333;
 }
 
@@ -28,7 +35,7 @@ h1 {
 
 /* Styles pour le bouton "Ajouter" */
 button {
-    background-color: #007bff;
+    background-color: #009688;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -56,7 +63,7 @@ li {
 
 /* Styles pour les boutons "Modifier" et "Supprimer" */
 button {
-    background-color: #007bff;
+    background-color: #009688;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -68,4 +75,10 @@ button {
 /* Styles pour les cases à cocher */
 input[type="checkbox"] {
     margin-right: 10px;
+}
+
+/* Styles pour l'affichage de l'utilisateur */
+#userDisplay {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
